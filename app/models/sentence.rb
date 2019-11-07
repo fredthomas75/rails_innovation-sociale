@@ -1,6 +1,7 @@
 class Sentence < ApplicationRecord
 
-  FIRSTS = %w(mobiliser
+  FIRSTS = %w(
+mobiliser
 dérisquer
 modéliser
 répliquer
@@ -15,11 +16,12 @@ activer
 rétroagir
 impulser
 arrimer
-positionner)
+positionner
+)
   validates :first, inclusion: {in: FIRSTS}
 
   SECONDS = %w(
-  "intelligence collective"
+intelligence collective
 complexité
 écosystème
 déploiement
@@ -53,8 +55,8 @@ inclusion
 empowerment
 coconstruction
 transfert
-"mise à l'échelle"
-"mind mapping"
+mise à l'échelle
+mind mapping
 transformation
 réseau
 opportunité
@@ -62,10 +64,12 @@ processus
 curseur
 idéation
 donnée
-interface)
+interface
+)
   validates :second, inclusion: {in: SECONDS}
 
-  THIRDS = %w(évolutif
+  THIRDS = %w(
+évolutif
 organique
 consubstanciel
 résilient
@@ -81,7 +85,8 @@ coopératif
 intelligent
 ingénieux
 riche
-éthique)
+éthique
+)
   validates :third, inclusion: {in: THIRDS}
 
   INTROS = ["Il faudrait", "On pourrait", "Pourquoi ne pas"]
