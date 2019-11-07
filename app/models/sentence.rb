@@ -53,8 +53,8 @@ inclusion
 empowerment
 coconstruction
 transfert
-mise à l'échelle
-mind mapping
+"mise à l'échelle"
+"mind mapping"
 transformation
 réseau
 opportunité
@@ -95,5 +95,4 @@ riche
 
   ENDS = ["le-la"]
   validates :end, inclusion: {in: ENDS}
-
 end
