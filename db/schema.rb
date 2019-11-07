@@ -19,6 +19,10 @@ ActiveRecord::Schema.define(version: 2019_10_16_010844) do
     t.string "first"
     t.string "second"
     t.string "third"
+    t.string "intro"
+    t.string "middle1"
+    t.string "middle2"
+    t.string "end"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

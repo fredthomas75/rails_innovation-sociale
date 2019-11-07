@@ -1,11 +1,6 @@
 <div class="col-md-12 text-center">
   <h1>Le générateur d'innovation sociale</h1><br>
-
-  <% sentence = Sentence.new(first: Sentence::FIRSTS.sample, second: Sentence::SECONDS.sample, third: Sentence::THIRDS.sample) %>
-  <h2>
-    <%= sentence.first + " " + sentence.second + " " + sentence.third %>
-  </h2><br>
-
+<%= render partial: 'sentence' %>
   <div class="btn btn-primary" onClick="window.location.href=window.location.href">
     Générer une nouvelle innovation
   </div>
