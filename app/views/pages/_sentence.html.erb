@@ -1,5 +1,7 @@
  <% sentence1 = Sentence.new(intro: Sentence::INTROS.sample, first: Sentence::FIRSTS.sample, second: Sentence::SECONDS.sample, third: Sentence::THIRDS.sample, middle1: Sentence::MIDDLE1S.sample, middle2: Sentence::MIDDLE2S.sample, end: Sentence::ENDS.sample) %>
   <% sentence2 = Sentence.new(intro: Sentence::INTROS.sample, first: Sentence::FIRSTS.sample, second: Sentence::SECONDS.sample, third: Sentence::THIRDS.sample, middle1: Sentence::MIDDLE1S.sample, middle2: Sentence::MIDDLE2S.sample, end: Sentence::ENDS.sample) %>
   <h2>
-    <%= sentence1.intro + " " + sentence1.first + " " + sentence1.middle1 + " " + sentence1.second + " " + sentence1.third + " " + sentence1.middle2 + " " + sentence2.first + " " + sentence1.end + " " + sentence2.second + " " + sentence2.third %>
+    <%= sentence1.intro + " " + sentence1.first + " " + sentence1.middle1 + " " + sentence1.second + " " + sentence1.third %>
+    <br>
+    <%= sentence1.middle2 + " " + sentence2.first + " " + sentence1.end + " " + sentence2.second + " " + sentence2.third %>
   </h2><br>
